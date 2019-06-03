@@ -1,4 +1,8 @@
- .work-entry .info {
+@media (pointer:none), (pointer:coarse) {
+
+}
+
+.work-entry .info {
      opacity: 1;
  }
 
@@ -6,5 +10,23 @@
      color:white;
  }
 
+ .flex_center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
 
+ .ftco-appointment .overlay {
+    background: #EC4E27;
+ }
  
+ .ftco-navbar-light.scrolled .nav-item.active > a {
+    color: #EC4E27 !important ;     
+ }
+a {
+     color: #EC4E27 ;
+ }
+
+ .ftco-footer {
+    padding: 60px;
+ }
