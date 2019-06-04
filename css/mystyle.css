@@ -1,6 +1,22 @@
 @media (pointer:none), (pointer:coarse) {
+   .mapouter, .gmap_canvas {
+      height:380px !important;
+  }
 
+  #ftco-nav {
+   background-color: white;
+ }
+ #ftco-nav > ul >li {
+    padding-left: 30px;
+ }
 }
+
+.flex_center {
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   text-align: center;
+ }
 
 .work-entry .info {
      opacity: 1;
@@ -10,12 +26,6 @@
      color:white;
  }
 
- .flex_center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
- }
-
  .ftco-appointment .overlay {
     background: #EC4E27;
  }
@@ -23,10 +33,46 @@
  .ftco-navbar-light.scrolled .nav-item.active > a {
     color: #EC4E27 !important ;     
  }
+
 a {
      color: #EC4E27 ;
  }
 
  .ftco-footer {
     padding: 60px;
+ }
+
+ .hero-wrap .overlay{
+    opacity: .25;
+ }
+
+ .ftco-discount .overlay {
+    opacity: .20;
+ }
+
+ .text_shadow{
+   text-shadow: 1px 1px #ff0000;
+ }
+
+ .pt-3, .py-3{
+    padding-top: 8px !important;
+ }
+
+ /* quadrati balli*/
+ .col-md-4 {
+   padding: 5px;
+ }
+
+ /* Maps */
+ .mapouter{
+    position:relative;
+    text-align:right;
+    height:500px;
+    width:100%;
+}
+ .gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    height:500px;
+    width:100%;
  }
