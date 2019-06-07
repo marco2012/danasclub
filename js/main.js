@@ -241,27 +241,27 @@
         
         
         // navigation
-        var OnePageNav = function() {
-            $(".smoothscroll[href^='#'], #ftco-nav ul li a[href^='#']").on('click', function(e) {
-                e.preventDefault();
+        // var OnePageNav = function() {
+        //     $(".smoothscroll[href^='#'], #ftco-nav ul li a[href^='#']").on('click', function(e) {
+        //         e.preventDefault();
                 
-                var hash = this.hash,
-                navToggler = $('.navbar-toggler');
-                $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                }, 700, 'easeInOutExpo', function(){
-                    window.location.hash = hash;
-                });
+        //         var hash = this.hash,
+        //         navToggler = $('.navbar-toggler');
+        //         $('html, body').animate({
+        //             scrollTop: $(hash).offset().top
+        //         }, 700, 'easeInOutExpo', function(){
+        //             window.location.hash = hash;
+        //         });
                 
                 
-                if ( navToggler.is(':visible') ) {
-                    navToggler.click();
-                }
-            });
-            $('body').on('activate.bs.scrollspy', function () {
-                console.log('nice');
-            })
-        };
+        //         if ( navToggler.is(':visible') ) {
+        //             navToggler.click();
+        //         }
+        //     });
+        //     $('body').on('activate.bs.scrollspy', function () {
+        //         console.log('nice');
+        //     })
+        // };
         // OnePageNav();
         
         // // magnific popup
@@ -317,10 +317,20 @@
         $('#ftco-nav').on('click', function() {
             $(this).removeClass('show')
         })
+
+        scrollToAnchor()
         
     })(jQuery);
     
     function smoothScrollTo(hash, offset=30){
         var aTag = $("a[name='" + hash.substring(1).trim() + "']");
         $('html,body').animate({ scrollTop: aTag.offset().top - offset }, 'fast');
+    }
+
+    function scrollToAnchor() {
+        let hash = window.location.hash
+        if (hash){
+            var aTag = $("a[name='" + hash.substring(1).trim() + "']");
+            $('html,body').animate({ scrollTop: aTag.offset().top - 100 }, 'slow');
+        }
     }
