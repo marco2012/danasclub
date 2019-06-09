@@ -303,6 +303,7 @@
         
         // $('#appointment_time').timepicker();
         
+
         // Smooth scroll
         $('#ftco-nav>ul>li>a').on('click', function() {
             let hash = $(this).attr('href')
@@ -312,6 +313,11 @@
             e.preventDefault();
             let hash = $(this).attr('href')
             smoothScrollTo(hash, 90)
+        })
+        $('#eventi_btn').on('click', function(e) {
+            e.preventDefault();
+            let hash = $(this).attr('href')
+            smoothScrollTo(hash, 50)
         })
 
         $('#ftco-nav').on('click', function() {
