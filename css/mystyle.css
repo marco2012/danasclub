@@ -21,6 +21,11 @@
     #spettacoli_section {
         padding-bottom: 0px;
     }
+    
+}
+
+.responsive_singledesc{
+    color: rgb(24, 24, 24) !important;
 }
 
 .flex_center {
