@@ -2,7 +2,7 @@
     .mapouter, .gmap_canvas {
         height:380px !important;
     }
-    
+
     #ftco-nav {
         background-color: white;
         position: fixed;
@@ -25,7 +25,7 @@
     #volantino_img{
         width: 100%;
     }
-    
+
 }
 
 .responsive_singledesc{
@@ -59,7 +59,7 @@
 }
 
 .ftco-navbar-light.scrolled .nav-item.active > a {
-    color: #EC4E27 !important ;     
+    color: #EC4E27 !important ;
 }
 
 a {
@@ -115,7 +115,7 @@ a {
     width: 100%;
     padding-bottom: 50%;
   }
-  
+
   .googleCalendar iframe{
     position: absolute;
     top: 0;
@@ -124,3 +124,8 @@ a {
     height: 100%;
   }
 
+.small-heading {
+  font-size: 17px;
+  color: #0e0e0e;
+  font-weight: bolder;
+}
