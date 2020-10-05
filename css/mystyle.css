@@ -130,3 +130,15 @@ a {
   color: #0e0e0e;
   font-weight: bolder;
 }
+
+.headingTitle {
+  color: #ec4f28;
+}
+
+.fontMedium {
+  font-size: medium;
+}
+
+.fontBold {
+  font-weight: 600;
+}
