@@ -3677,6 +3677,7 @@ ul.cro_daylines{
 	vertical-align: top;
 	display: table-row;
 	width: 100%;
+	font-size: 12pt;
 }
 
 ul.cro_daylines li{
@@ -4274,6 +4275,7 @@ ul.frontpagewidget li.widget_tli-newsletter form input.newssubmit{
 .responsive_singledesc{
 	text-align: center;
 	padding-bottom: 10px;
+	font-size: 12pt;
 }
 
 .responsivewrap ul.responsivetimes li:nth-child(even){ 
