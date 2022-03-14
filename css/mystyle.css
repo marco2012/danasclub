@@ -1,144 +1,147 @@
 @media (pointer: none), (pointer: coarse) {
-  .mapouter,
-  .gmap_canvas {
-    height: 380px !important;
-  }
+    .mapouter,
+    .gmap_canvas {
+        height: 380px !important;
+    }
 
-  #ftco-nav {
-    background-color: white;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 999;
-    width: 100%;
-    height: 100%;
-  }
-  #ftco-nav > ul > li {
-    padding-left: 30px;
-  }
-  #discount_div {
-    height: 400px !important;
-  }
-  #spettacoli_section {
-    padding-bottom: 0px;
-  }
+    #ftco-nav {
+        background-color: white;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        width: 100%;
+        height: 100%;
+    }
+    #ftco-nav > ul > li {
+        padding-left: 30px;
+    }
+    #discount_div {
+        height: 400px !important;
+    }
+    #spettacoli_section {
+        padding-bottom: 0px;
+    }
 
-  #volantino_img {
-    width: 100%;
-  }
+    #volantino_img {
+        width: 100%;
+    }
 }
 
 .responsive_singledesc {
-  color: rgb(24, 24, 24) !important;
+    color: rgb(24, 24, 24) !important;
 }
 
+.maestri_class {
+    max-width: 80%;
+}
 .flex_center {
-  display: flex;
-  justify-content: center;
-  /* flex-direction: column; */
-  text-align: center;
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+    text-align: center;
 }
 
 #maestri_div {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  flex-wrap: wrap;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .work-entry .info {
-  opacity: 1;
+    opacity: 1;
 }
 
 .appointment-info a {
-  color: white;
+    color: white;
 }
 
 .ftco-appointment .overlay {
-  background: #ec4e27;
+    background: #ec4e27;
 }
 
 .ftco-navbar-light.scrolled .nav-item.active > a {
-  color: #ec4e27 !important ;
+    color: #ec4e27 !important ;
 }
 
 a {
-  color: #ec4e27;
+    color: #ec4e27;
 }
 
 .ftco-footer {
-  padding: 60px;
+    padding: 60px;
 }
 
 .hero-wrap .overlay {
-  opacity: 0.25;
+    opacity: 0.25;
 }
 
 .ftco-discount .overlay {
-  opacity: 0.2;
+    opacity: 0.2;
 }
 
 .text_shadow {
-  text-shadow: 1px 1px #ff0000;
+    text-shadow: 1px 1px #ff0000;
 }
 
 .pt-3,
 .py-3 {
-  padding-top: 8px !important;
+    padding-top: 8px !important;
 }
 
 /* quadrati balli*/
 .col-md-4 {
-  padding: 5px;
+    padding: 5px;
 }
 
 #discount_div {
-  height: 560px;
+    height: 560px;
 }
 
 /* Maps */
 .mapouter {
-  position: relative;
-  text-align: right;
-  height: 500px;
-  width: 100%;
+    position: relative;
+    text-align: right;
+    height: 500px;
+    width: 100%;
 }
 .gmap_canvas {
-  overflow: hidden;
-  background: none !important;
-  height: 500px;
-  width: 100%;
+    overflow: hidden;
+    background: none !important;
+    height: 500px;
+    width: 100%;
 }
 
 .googleCalendar {
-  position: relative;
-  height: 400px;
-  width: 100%;
-  padding-bottom: 50%;
+    position: relative;
+    height: 400px;
+    width: 100%;
+    padding-bottom: 50%;
 }
 
 .googleCalendar iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .small-heading {
-  font-size: 17px;
-  color: #0e0e0e;
-  font-weight: bolder;
+    font-size: 17px;
+    color: #0e0e0e;
+    font-weight: bolder;
 }
 
 .headingTitle {
-  color: #ec4f28;
+    color: #ec4f28;
 }
 
 .fontMedium {
-  font-size: medium;
+    font-size: medium;
 }
 
 .fontBold {
-  font-weight: 600;
+    font-weight: 600;
 }
