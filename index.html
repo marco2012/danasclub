@@ -8,33 +8,26 @@
             data-blockingmode="auto"
             type="text/javascript"
         ></script>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=UA-77899408-10"
-        ></script>
         <script>
             window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-            gtag("js", new Date());
-            gtag("config", "UA-77899408-10");
         </script>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-YPNGRFWV7V"
-        ></script>
+        <!-- Google Tag Manager -->
         <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-            gtag("js", new Date());
-
-            gtag("config", "G-YPNGRFWV7V");
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({
+                    "gtm.start": new Date().getTime(),
+                    event: "gtm.js",
+                });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != "dataLayer" ? "&l=" + l : "";
+                j.async = true;
+                j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, "script", "dataLayer", "GTM-MR65SHR");
         </script>
+        <!-- End Google Tag Manager -->
         <script>
             var host = "danasclub.it";
             if (
@@ -86,6 +79,16 @@
         <!-- <link type="text/css" rel="stylesheet" href="css/lightGallery.css" />  -->
     </head>
     <body>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript
+            ><iframe
+                src="https://www.googletagmanager.com/ns.html?id=GTM-MR65SHR"
+                height="0"
+                width="0"
+                style="display: none; visibility: hidden"
+            ></iframe
+        ></noscript>
+        <!-- End Google Tag Manager (noscript) -->
         <a name="home"></a>
         <div
             class="hero-wrap js-fullheight"
@@ -1013,6 +1016,7 @@
                         </h1>
                         <h5>
                             <a
+                                id="btn_show_all_spettacoli"
                                 href="https://www.facebook.com/pg/danasclub/videos/"
                                 target="_blank"
                                 >Clicca qui</a
@@ -1021,7 +1025,7 @@
                         </h5>
                     </div>
                 </div>
-                <div class="row d-flex flex_center">
+                <!-- <div class="row d-flex flex_center">
                     <iframe
                         src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fdanasclub%2Fvideos%2F893758797724434%2F&show_text=0&width=560"
                         width="600"
@@ -1034,8 +1038,8 @@
                         allowfullscreen="true"
                     ></iframe>
                     <
-                </div>
-                <div class="row d-flex flex_center">
+                </div> -->
+                <!-- <div class="row d-flex flex_center">
                     <a
                         href="https://www.facebook.com/415251938585693/videos/916210751823140"
                         target="_blank"
@@ -1047,6 +1051,17 @@
                             height="100%"
                         />
                     </a>
+                </div> -->
+                <div class="row d-flex flex_center">
+                    <iframe
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/HMqQpBJMSWM"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                    ></iframe>
                 </div>
                 <div class="row d-flex flex_center">
                     <iframe
@@ -1315,7 +1330,10 @@
                 <a href="/cookie-policy.html">Cookie Policy</a>
             </div>
             <div class="container-fluid" style="text-align: center">
-                <a href="https://marco2012.github.io" target="_blank"
+                <a
+                    id="marlup_website"
+                    href="https://marco2012.github.io"
+                    target="_blank"
                     ><img src="images/marlup.png" alt="marlup" width="100px"
                 /></a>
             </div>
