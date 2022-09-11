@@ -145,3 +145,9 @@ a {
 .fontBold {
     font-weight: 600;
 }
+
+@media (max-width: 380px) {
+    .title_text {
+        font-size: 36px !important;
+    }
+}

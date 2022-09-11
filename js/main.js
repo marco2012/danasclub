@@ -127,17 +127,17 @@
                 sd = $(".js-scroll-wrap"),
                 new_menu = $("#new_menu");
 
-            if (st > 750) {
+            if (st > 550) {
                 if (!navbar.hasClass("scrolled")) {
                     navbar.addClass("scrolled");
                 }
             }
-            if (st < 750) {
+            if (st < 550) {
                 if (navbar.hasClass("scrolled")) {
                     navbar.removeClass("scrolled sleep");
                 }
             }
-            if (st > 800) {
+            if (st > 650) {
                 if (!navbar.hasClass("awake")) {
                     navbar.addClass("awake");
                 }
@@ -147,7 +147,7 @@
                 }
                 new_menu.removeClass("hide");
             }
-            if (st < 800) {
+            if (st < 650) {
                 if (navbar.hasClass("awake")) {
                     navbar.removeClass("awake");
                     navbar.addClass("sleep");
@@ -344,6 +344,11 @@
     $(".menu_list_item").on("click", function () {
         $("#active").click();
     });
+
+    // $("#active").on("click", function () {
+    //     document.querySelector(".wrapper").style.display = "block";
+    //     document.querySelector(".menu-btn").style.position = "absolute";
+    // });
 
     scrollToAnchor();
 })(jQuery);
