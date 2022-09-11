@@ -305,3 +305,38 @@ input[type="checkbox"] {
     text-transform: uppercase;
 }
 /* end menu */
+/* list */
+.list_evento {
+    list-style-type: none;
+    max-width: 86%;
+}
+
+/* .list_element_evento h3 {
+    font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
+}
+
+.list_element_evento p {
+    font: bold 16px/1.5 Helvetica, Verdana, sans-serif;
+} */
+
+.list_element_evento img {
+    float: left;
+    margin: 0 15px 0 0;
+    max-width: 50px;
+}
+
+.list_element_evento p {
+    font: 200 12px/1.5 Georgia, Times New Roman, serif;
+}
+
+.list_element_evento {
+    padding: 10px;
+    overflow: auto;
+}
+
+.list_element_evento:hover {
+    background: #eee;
+    cursor: pointer;
+    border-radius: 8px;
+}
+/* end list */
