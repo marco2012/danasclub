@@ -32,3 +32,9 @@ $("#tel_number").click(function (event) {
 $("#email").click(function (event) {
     track("email");
 });
+$("#wa-widget-send-button").click(function (event) {
+    track("whatsapp open popup");
+});
+$(".wa-chat-box-content-send-btn").click(function (event) {
+    track("whatsapp start chat");
+});
