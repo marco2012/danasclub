@@ -195,10 +195,49 @@
                 filter: hue-rotate(360deg);
             }
         }
+
         .menu_list_item {
             text-transform: uppercase;
         }
     </style>
+
+    <!-- Whatsapp -->
+    <script>
+        var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?84177';
+        var s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = url;
+        var options = {
+      "enabled":true,
+      "chatButtonSetting":{
+          "backgroundColor":"#4dc247",
+          "ctaText":"Whatsapp",
+          "borderRadius":"25",
+          "marginLeft":"0",
+          "marginBottom":"20",
+          "marginRight":"20",
+          "position":"right"
+      },
+      "brandSetting":{
+          "brandName":"Free Sport Life (Dana's Club)",
+          "brandSubTitle":"Risponde entro 1 ora.",
+          "brandImg":"http://danasclub.it/images/tango.jpg",
+          "welcomeText":"Ciao, come possiamo aiutarti?",
+          "messageText":"Ciao, ho una domanda riguardo la scuola di ballo.",
+          "backgroundColor":"#0a5f54",
+          "ctaText":"Avvia Chat",
+          "borderRadius":"30",
+          "autoShow":false,
+          "phoneNumber":"393476873085"
+      }
+    };
+        s.onload = function() {
+            CreateWhatsappChatWidget(options);
+        };
+        var x = document.getElementsByTagName('script')[0];
+        x.parentNode.insertBefore(s, x);
+    </script>
 </head>
 
 <body>
@@ -219,7 +258,8 @@
                     <div class="icon">
                         <img src="images/tango_icon.png" alt="tango" />
                     </div>
-                    <h1 class="mb-4 text_shadow title_text" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
+                    <h1 class="mb-4 text_shadow title_text"
+                        data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
                         Free Sport Life <br />(Dana's Club)
                     </h1>
                     <h3 class="mb-5 text_shadow" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"
@@ -249,36 +289,36 @@
                     <ul class="d-flex flex-column">
                         <li><a href="#corsi" class="menu_list_item">Corsi</a></li>
                         <li><a href="#lezioni_di_prova" class="menu_list_item"">Prova Gratuita</a></li>
-                        <li><a href="#spettacoli" class="menu_list_item"">Spettacoli</a></li>
-                        <li><a href="#maestri" class="menu_list_item"">Maestri</a></li>
-                        <li><a href="#orari" class="menu_list_item"">Orari</a></li>
-                        <li><a href="#contatti" class="menu_list_item"">Contatti</a></li>
+                        <li><a href=" #spettacoli" class="menu_list_item"">Spettacoli</a></li>
+                        <li><a href=" #maestri" class="menu_list_item"">Maestri</a></li>
+                        <li><a href=" #orari" class="menu_list_item"">Orari</a></li>
+                        <li><a href=" #contatti" class="menu_list_item"">Contatti</a></li>
                     </ul>
                 </div>
             </div>
-            <!-- <div class="collapse navbar-collapse" id="ftco-nav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a href="#corsi" class="nav-link">Corsi</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#lezioni_di_prova" class="nav-link">Lezioni di Prova</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#spettacoli" class="nav-link">Spettacoli</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#maestri" class="nav-link">Maestri</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#orari" class="nav-link">Orari</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#contatti" class="nav-link">Contatti</a>
-                    </li>
-                </ul>
-            </div> -->
-        </div>
+            <!-- <div class=" collapse navbar-collapse" id="ftco-nav">
+                                <ul class="navbar-nav ml-auto">
+                                    <li class="nav-item">
+                                        <a href="#corsi" class="nav-link">Corsi</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#lezioni_di_prova" class="nav-link">Lezioni di Prova</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#spettacoli" class="nav-link">Spettacoli</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#maestri" class="nav-link">Maestri</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#orari" class="nav-link">Orari</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#contatti" class="nav-link">Contatti</a>
+                                    </li>
+                                </ul>
+                </div> -->
+            </div>
     </nav>
     <!-- END nav -->
     <!-- CORSI -->
