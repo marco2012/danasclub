@@ -1,7 +1,7 @@
 function track(detail) {
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
-        event: "click",
+        event: "click_btn",
         detail: detail,
     });
 }
