@@ -59,147 +59,6 @@
     <link rel="stylesheet" href="css/table_schedule.css" />
     <script src="https://use.fontawesome.com/112a04eabb.js"></script>
     <!-- <link type="text/css" rel="stylesheet" href="css/lightGallery.css" />  -->
-    <style>
-        .wrapper {
-            position: fixed;
-            top: 0;
-            left: 0;
-            height: 100%;
-            width: 100%;
-            /*background: linear-gradient(-135deg, #c850c0, #4158d0);*/
-            /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
-            /* background: linear-gradient(-45deg, #e3eefe 0%, #efddfb 100%);*/
-            /* clip-path: circle(25px at calc(0% + 45px) 45px); */
-            background: #000;
-            clip-path: circle(25px at calc(100% - 45px) 45px);
-            transition: all 0.3s ease-in-out;
-        }
-
-        #active:checked~.wrapper {
-            clip-path: circle(75%);
-        }
-
-        .menu-btn {
-            position: absolute;
-            z-index: 2;
-            right: 20px;
-            /* left: 20px; */
-            top: 20px;
-            height: 50px;
-            width: 50px;
-            text-align: center;
-            line-height: 50px;
-            border-radius: 50%;
-            font-size: 20px;
-            color: #fff;
-            cursor: pointer;
-            /*background: linear-gradient(-135deg, #c850c0, #4158d0);*/
-            /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
-            /* background: linear-gradient(-45deg, #e3eefe 0%, #efddfb 100%); */
-            background: #000;
-            transition: all 0.3s ease-in-out;
-        }
-
-        #active:checked~.menu-btn {
-            color: #fff;
-        }
-
-        #active:checked~.menu-btn i:before {
-            content: "\f00d";
-        }
-
-        .wrapper ul {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            list-style: none;
-            text-align: center;
-        }
-
-        .wrapper ul li {
-            margin: 15px 0;
-        }
-
-        .wrapper ul li a {
-            color: none;
-            text-decoration: none;
-            font-size: 30px;
-            font-weight: 500;
-            padding: 5px 30px;
-            color: #fff;
-            border-radius: 50px;
-            background: #000;
-            position: relative;
-            line-height: 50px;
-            transition: all 0.3s ease;
-        }
-
-        .wrapper ul li a:after {
-            position: absolute;
-            content: "";
-            background: #fff;
-            background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
-            /*background: linear-gradient(375deg, #1cc7d0, #2ede98);*/
-            width: 104%;
-            height: 110%;
-            left: -2%;
-            top: -5%;
-            /* if the font is 'Oswald'*/
-            border-radius: 50px;
-            transform: scaleY(0);
-            z-index: -1;
-            animation: rotate 1.5s linear infinite;
-            transition: transform 0.3s ease;
-        }
-
-        .wrapper ul li a:hover:after {
-            transform: scaleY(1);
-        }
-
-        .wrapper ul li a:hover {
-            color: #fff;
-        }
-
-        input[type="checkbox"] {
-            display: none;
-        }
-
-        .content {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: -1;
-            text-align: center;
-            width: 100%;
-            color: #202020;
-        }
-
-        .content .title {
-            font-size: 40px;
-            font-weight: 700;
-        }
-
-        .content p {
-            font-size: 35px;
-            font-weight: 600;
-        }
-
-        @keyframes rotate {
-            0% {
-                filter: hue-rotate(0deg);
-            }
-
-            100% {
-                filter: hue-rotate(360deg);
-            }
-        }
-
-        .menu_list_item {
-            text-transform: uppercase;
-        }
-    </style>
 
     <!-- Whatsapp -->
     <script>
@@ -209,30 +68,30 @@
         s.async = true;
         s.src = url;
         var options = {
-      "enabled":true,
-      "chatButtonSetting":{
-          "backgroundColor":"#4dc247",
-          "ctaText":"Whatsapp",
-          "borderRadius":"25",
-          "marginLeft":"0",
-          "marginBottom":"20",
-          "marginRight":"20",
-          "position":"right"
-      },
-      "brandSetting":{
-          "brandName":"Free Sport Life (Dana's Club)",
-          "brandSubTitle":"Scuola di Ballo Piazza Bologna, Roma",
-          "brandImg":"http://danasclub.it/images/tango.jpg",
-          "welcomeText":"Ciao, come possiamo aiutarti?",
-          "messageText":"Ciao, ho una domanda riguardo la scuola di ballo.",
-          "backgroundColor":"#0a5f54",
-          "ctaText":"Avvia Chat",
-          "borderRadius":"30",
-          "autoShow":false,
-          "phoneNumber":"393476873085"
-      }
-    };
-        s.onload = function() {
+            "enabled": true,
+            "chatButtonSetting": {
+                "backgroundColor": "#4dc247",
+                "ctaText": "WhatsApp",
+                "borderRadius": "25",
+                "marginLeft": "0",
+                "marginBottom": "25",
+                "marginRight": "25",
+                "position": "right"
+            },
+            "brandSetting": {
+                "brandName": "Free Sport Life (Dana's Club)",
+                "brandSubTitle": "Scuola di Ballo Piazza Bologna, Roma",
+                "brandImg": "http://danasclub.it/images/tango.jpg",
+                "welcomeText": "Ciao, come possiamo aiutarti?",
+                "messageText": "Ciao, ho una domanda riguardo la scuola di ballo.",
+                "backgroundColor": "#0a5f54",
+                "ctaText": "Avvia Chat",
+                "borderRadius": "30",
+                "autoShow": false,
+                "phoneNumber": "393476873085"
+            }
+        };
+        s.onload = function () {
             CreateWhatsappChatWidget(options);
         };
         var x = document.getElementsByTagName('script')[0];
@@ -525,7 +384,7 @@
                     </br>
                     <h4>
                         Vieni a provare <b>gratuitamente</b> le nostre lezioni di
-                        prova per principianti.
+                        prova per principianti
                     </h4>
                     <!-- <h3 style="color: crimson; padding: 16px 0">
                             Sconto del 20% sul trimestre
@@ -1200,8 +1059,8 @@
                     <div class="appointment-info text-center p-5">
                         <div class="mb-4">
                             <span class="icon icon-whatsapp"></span>
-                            <h3 class="fontBold">Telefono</h3>
-                            <p class="day fontMedium">
+                            <h3 class="fontBold">Telefono / Whatsapp</h3>
+                            <p class="day fontLarge">
                                 <strong>
                                     <a href="tel:3476873085" id="tel_number">347 687 3085</a>
                                 </strong>
@@ -1210,7 +1069,7 @@
                         <div class="mb-4">
                             <span class="icon icon-envelope"></span>
                             <h3 class="fontBold">Email</h3>
-                            <p class="day fontMedium">
+                            <p class="day fontLarge">
                                 <strong>
                                     <a href="mailto:donatella.lupia@gmail.com" id="email">donatella.lupia@gmail.com</a>
                                 </strong>
@@ -1219,7 +1078,7 @@
                         <!-- <div class="mb-4">
                                 <span class="icon icon-map-marker"></span>
                                 <h3 class="fontBold">Indirizzo</h3>
-                                <p class="fontMedium">
+                                <p class="fontLarge">
                                     <a
                                         href="https://goo.gl/maps/Vj7M5GTiFkAE56nf8"
                                         target="_blank"
@@ -1235,7 +1094,7 @@
                         <div class="mb-4">
                             <span class="icon icon-facebook"></span>
                             <h3 class="fontBold">Facebook</h3>
-                            <p class="day fontMedium">
+                            <p class="day fontLarge">
                                 <strong>
                                     <a href="http://facebook.com/danasclub">facebook.com/danasclub</a>
                                 </strong>
@@ -1244,7 +1103,7 @@
                         <div class="mb-4">
                             <span class="icon icon-facebook"></span>
                             <h3 class="fontBold">Messenger</h3>
-                            <p class="day fontMedium">
+                            <p class="day fontLarge">
                                 <strong>
                                     <a href="http://m.me/danasclub">m.me/danasclub</a>
                                 </strong>
@@ -1345,12 +1204,12 @@
                                         <span class="text">donatella.lupia@gmail.com</span></a>
                                 </li>
                                 <li>
-                                    <a href="https://facebook.com/danasclub"><span class="icon icon-facebook"></span>
+                                    <a href="https://facebook.com/danasclub" target="_blank"><span class="icon icon-facebook"></span>
                                         &nbsp;
                                         <span class="text">Facebook</span></a>
                                 </li>
                                 <li>
-                                    <a href="http://m.me/danasclub"><span class="icon icon-facebook"></span>
+                                    <a href="http://m.me/danasclub" target="_blank"><span class="icon icon-facebook"></span>
                                         &nbsp;
                                         <span class="text">Facebook Messenger</span></a>
                                 </li>

@@ -1,7 +1,7 @@
-function track(detail) {
+function track(detail, event = "click_btn") {
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
-        event: "click_btn",
+        event: event,
         detail: detail,
     });
 }
@@ -33,8 +33,8 @@ $("#email").click(function (event) {
     track("email");
 });
 $("#wa-widget-send-button").click(function (event) {
-    track("whatsapp open popup");
+    track("whatsapp", "open popup");
 });
 $(".wa-chat-box-content-send-btn").click(function (event) {
-    track("whatsapp start chat");
+    track("whatsapp", "start chat");
 });
