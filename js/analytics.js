@@ -26,3 +26,9 @@ $("#volantino_img").click(function (event) {
 $("#nostri_corsi_btn").click(function (event) {
     track("i nostri corsi");
 });
+$("#tel_number").click(function (event) {
+    track("call number");
+});
+$("#email").click(function (event) {
+    track("email");
+});
