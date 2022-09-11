@@ -22,10 +22,6 @@
     #spettacoli_section {
         padding-bottom: 0px;
     }
-
-    #volantino_img {
-        width: 100%;
-    }
 }
 
 .responsive_singledesc {
@@ -155,6 +151,17 @@ a {
         font-size: 28px !important;
     }
 }
+
+.volantino_img {
+    width: 50%;
+}
+
+@media (max-width: 768px) {
+    .volantino_img {
+        width: 100%;
+    }
+}
+
 /* menu */
 .wrapper {
     position: fixed;
