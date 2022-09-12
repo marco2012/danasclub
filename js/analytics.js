@@ -33,8 +33,8 @@ $("#email").click(function (event) {
     track("email");
 });
 $("#wa-widget-send-button").click(function (event) {
-    track("whatsapp", "open popup");
+    track("open popup", "whatsapp");
 });
 $(".wa-chat-box-content-send-btn").click(function (event) {
-    track("whatsapp", "start chat");
+    track("start chat", "whatsapp");
 });
