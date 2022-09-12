@@ -14,6 +14,18 @@ $("#btn_show_all_videos").click(function (event) {
 $("#btn_show_all_photos").click(function (event) {
     track("show all photos");
 });
+$("#btn_show_photos_2022").click(function (event) {
+    track("show photos 2022");
+});
+$("#btn_show_photos_2019a").click(function (event) {
+    track("show photos 2019 a");
+});
+$("#btn_show_photos_2019b").click(function (event) {
+    track("show photos 2019 b");
+});
+$("#btn_show_photos_2016").click(function (event) {
+    track("show photos 2016");
+});
 $("#btn_show_all_events").click(function (event) {
     track("show all events");
 });
