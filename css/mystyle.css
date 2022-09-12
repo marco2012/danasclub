@@ -162,6 +162,16 @@ a {
     }
 }
 
+#navbar_title:after {
+    content: " - Scuola di Ballo";
+}
+
+@media (max-width: 535px) {
+    #navbar_title:after {
+        content: "";
+    }
+}
+
 /* menu */
 .wrapper {
     position: fixed;
@@ -319,6 +329,10 @@ input[type="checkbox"] {
     font: bold 16px/1.5 Helvetica, Verdana, sans-serif;
 } */
 
+.list_element_evento h5 {
+    margin-left: 65px;
+}
+
 .list_element_evento img {
     float: left;
     margin: 0 15px 0 0;
@@ -336,7 +350,7 @@ input[type="checkbox"] {
 
 .list_element_evento:hover {
     background: #eee;
-    cursor: pointer;
+    /* cursor: pointer; */
     border-radius: 8px;
 }
 /* end list */
