@@ -97,6 +97,19 @@
         var x = document.getElementsByTagName('script')[0];
         x.parentNode.insertBefore(s, x);
     </script>
+    <!-- MailerLite Universal -->
+    <script>
+        (function (w, d, e, u, f, l, n) {
+            w[f] = w[f] || function () {
+                (w[f].q = w[f].q || [])
+                .push(arguments);
+            }, l = d.createElement(e), l.async = 1, l.src = u,
+            n = d.getElementsByTagName(e)[0], n.parentNode.insertBefore(l, n);
+        })
+            (window, document, 'script', 'https://assets.mailerlite.com/js/universal.js', 'ml');
+        ml('account', '152301');
+    </script>
+    <!-- End MailerLite Universal -->
 </head>
 
 <body>
@@ -126,7 +139,7 @@
                         Scuola di Ballo Roma
                     </h1>
                     <h2 class="text_shadow mb-5" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"
-                    style="color: white;">PIAZZA BOLOGNA</h2>
+                        style="color: white;">PIAZZA BOLOGNA</h2>
                     <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
                         <a href="#corsi" class="btn btn-white btn-outline-white px-4 py-3" id="nostri_corsi_btn">I
                             nostri corsi</a>
@@ -1225,6 +1238,27 @@
         </div>
     </section>
 
+    <!-- newsletter -->
+    <a name="newsletter"></a>
+    <section class="ftco-section bg-light">
+        <div class="container">
+            <div class="row justify-content-center mb-5 pb-3">
+                <div class="col-md-7 heading-section ftco-animate text-center">
+                    <h1 class="my-4">
+                        <a href="#newsletter">Newsletter</a>
+                    </h1>
+                    <!-- <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> -->
+                    <h4>
+                        Iscriviti alla nostra newsletter per rimanere aggiornato su <b>eventi</b> e <b>lezioni di prova gratuita</b>.
+                    </h4>
+                </div>
+            </div>
+            <div class="row d-flex align-items-center justify-content-center">
+                <div class="ml-embedded" data-form="48ohbf"></div>
+            </div>
+        </div>
+    </section>
+
     <!-- mappa -->
     <a name="mappa"></a>
     <section class="ftco-section" style="padding: 0">
@@ -1304,7 +1338,9 @@
                                         <span class="text">347 687 3085</span></a>
                                 </li>
                                 <li>
-                                    <a href="https://api.whatsapp.com/send?phone=393476873085&text=Ciao, ho una domanda riguardo la scuola di ballo."><span class="icon icon-whatsapp"></span>
+                                    <a
+                                        href="https://api.whatsapp.com/send?phone=393476873085&text=Ciao, ho una domanda riguardo la scuola di ballo."><span
+                                            class="icon icon-whatsapp"></span>
                                         &nbsp;
                                         <span class="text">Whatsapp</span></a>
                                 </li>
