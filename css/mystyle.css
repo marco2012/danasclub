@@ -162,13 +162,17 @@ a {
     }
 }
 
-#navbar_title:after {
-    content: " - Scuola di Ballo";
-}
-
-@media (max-width: 535px) {
+/* #navbar_title:after {
+    content: " - Scuola di Ballo Roma";
+} */
+@media (min-width: 535px) {
     #navbar_title:after {
-        content: "";
+        content: " - Scuola di Ballo";
+    }
+}
+@media (min-width: 630px) {
+    #navbar_title:after {
+        content: " - Scuola di Ballo Roma";
     }
 }
 
