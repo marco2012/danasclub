@@ -30065,6 +30065,7 @@ blockquote .small:before {
 .post-block-image {
 	width: 100%;
 	height: auto;
+	border-radius: 16px;
 }
 
 .post-block-title {
