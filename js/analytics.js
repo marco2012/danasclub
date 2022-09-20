@@ -14,3 +14,6 @@ $("#wa-widget-send-button").click(function () {
 $(".wa-chat-box-content-send-btn").click(function () {
     track("start chat", "whatsapp");
 });
+$("#write_review").click(function () {
+    track("write review");
+});
