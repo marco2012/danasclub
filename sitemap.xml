@@ -6,50 +6,47 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
+
 <url>
   <loc>https://danasclub.it/</loc>
-  <lastmod>2022-09-20T16:23:04+00:00</lastmod>
+  <lastmod>2022-09-22T13:14:32+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://danasclub.it/index.html</loc>
-  <lastmod>2022-09-20T16:23:04+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
   <loc>https://danasclub.it/about.html</loc>
-  <lastmod>2022-09-20T16:23:04+00:00</lastmod>
+  <lastmod>2022-09-22T13:14:32+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://danasclub.it/corsi.html</loc>
-  <lastmod>2022-09-20T16:23:04+00:00</lastmod>
+  <lastmod>2022-09-22T13:14:32+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://danasclub.it/prova_gratuita.html</loc>
-  <lastmod>2022-09-20T16:23:04+00:00</lastmod>
+  <lastmod>2022-09-22T13:14:32+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://danasclub.it/spettacoli.html</loc>
-  <lastmod>2022-09-20T16:23:04+00:00</lastmod>
+  <lastmod>2022-09-22T13:14:32+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://danasclub.it/contatti.html</loc>
-  <lastmod>2022-09-20T16:23:04+00:00</lastmod>
+  <lastmod>2022-09-22T13:14:32+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://danasclub.it/cookie-policy.html</loc>
-  <lastmod>2022-09-20T16:23:04+00:00</lastmod>
+  <lastmod>2022-09-22T13:14:32+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://danasclub.it/privacy-policy.html</loc>
-  <lastmod>2022-09-20T16:23:04+00:00</lastmod>
-  <priority>0.64</priority>
+  <lastmod>2022-09-22T13:14:32+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
+
 
 </urlset>
