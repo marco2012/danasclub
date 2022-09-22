@@ -46,6 +46,9 @@
 .white {
     color: white;
 }
+.desktop-mr-20 {
+    margin-right: 20px;
+}
 @media (max-width: 768px) {
     .home-title {
         line-height: normal;
@@ -64,6 +67,9 @@
     }
     .prova-gratuita-img {
         max-height: 200px;
+    }
+    .desktop-mr-20{
+        margin-right: 0;
     }
 }
 @media (min-width: 992px) {
