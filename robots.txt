@@ -2,6 +2,5 @@ User-agent: *
 Disallow: /template/
 Disallow: /old/
 Disallow: /bat/
-Disallow: /rd_navbar.html
 
-Sitemap: http://danasclub.it/sitemap.xml
+Sitemap: https://danasclub.it/sitemap.xml
