@@ -5,7 +5,7 @@ function track(detail, event = "click_btn") {
         detail: detail,
     });
 }
-$("#marlup_website").click(function () {
+$(".marlup_website").click(function () {
     track("marlup website");
 });
 $("#wa-widget-send-button").click(function () {
