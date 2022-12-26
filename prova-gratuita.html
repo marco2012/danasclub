@@ -181,7 +181,6 @@
                                             <a
                                                 class="btn btn-style-1 btn-primary btn-prenota-ora"
                                                 target="_blank"
-                                                href="https://api.whatsapp.com/send?phone=393476873085&text=Ciao, vorrei prenotare una lezione di prova"
                                                 >PRENOTA ORA</a
                                             >
                                         </div>
@@ -196,19 +195,20 @@
                         >
                             <div class="shell">
                                 <h2>Prossimi eventi</h2>
-                                <div class="p text-width-medium">
-                                    <p class="bigger black">
-                                        Puoi trovare di seguito le prossime
-                                        lezioni di ballo per principianti. Ti
-                                        aspettiamo!
+                                <div class="p text-width-medium" style="padding-top: 10px;">
+                                    <p class="bigger black" style="text-transform: uppercase;">
+                                        Prima lezione gratuita
+                                    </p>
+                                    <p class="bigger black" id="sconto" style="text-transform: uppercase;">
+                                        50% di sconto sul primo mese
                                     </p>
                                 </div>
                                 <a
-                                                class="btn btn-prenota-ora" style="color: black;"
-                                                target="_blank"
-                                                href="https://api.whatsapp.com/send?phone=393476873085&text=Ciao, vorrei prenotare una lezione di prova"
-                                                >Prenotazione obbligatoria</a
-                                            >
+                                    class="btn btn-prenota-ora"
+                                    style="color: black"
+                                    target="_blank"
+                                    >Prenotazione obbligatoria</a
+                                >
                                 <article
                                     class="box-post box-post-dark box-post-reverse box-post-image-right-bottom"
                                 >
@@ -233,7 +233,6 @@
                                         </div>
                                         <a
                                             class="btn btn-sm box-post-control btn-prenota-ora-balli-di-gruppo"
-                                            href="https://api.whatsapp.com/send?phone=393476873085&text=Ciao, vorrei prenotare una lezione di prova"
                                             target="_blank"
                                             >PRENOTA</a
                                         >
@@ -263,7 +262,6 @@
                                         </div>
                                         <a
                                             class="btn btn-sm box-post-control btn-prenota-ora-standard"
-                                            href="https://api.whatsapp.com/send?phone=393476873085&text=Ciao, vorrei prenotare una lezione di prova"
                                             target="_blank"
                                             >PRENOTA</a
                                         >
@@ -293,7 +291,6 @@
                                         </div>
                                         <a
                                             class="btn btn-sm box-post-control btn-prenota-ora-tango"
-                                            href="https://api.whatsapp.com/send?phone=393476873085&text=Ciao, vorrei prenotare una lezione di prova"
                                             target="_blank"
                                             >PRENOTA</a
                                         >
@@ -806,5 +803,22 @@
         <script src="js/core.min.js"></script>
         <script src="js/script.js"></script>
         <script src="js/analytics.js"></script>
+        <script>
+            function formatDate(date) {
+                if (date == null) date = new Date();
+                var d = new Date(date),
+                    month = "" + (d.getMonth() + 1),
+                    day = "" + d.getDate(),
+                    year = d.getFullYear();
+
+                if (month.length < 2) month = "0" + month;
+                if (day.length < 2) day = "0" + day;
+
+                return [year, month, day].join("-");
+            }
+            if (formatDate() > '2023-01-31') {
+                document.getElementById("sconto").style.display = 'none';
+            }
+        </script>
     </body>
 </html>
