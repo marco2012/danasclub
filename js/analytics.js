@@ -1,3 +1,16 @@
+function formatDate(date) {
+    if (date == null) date = new Date();
+    var d = new Date(date),
+        month = "" + (d.getMonth() + 1),
+        day = "" + d.getDate(),
+        year = d.getFullYear();
+
+    if (month.length < 2) month = "0" + month;
+    if (day.length < 2) day = "0" + day;
+
+    return [year, month, day].join("-");
+}
+
 var isMobile = function () {
     let check = false;
     (function (a) {
@@ -13,6 +26,7 @@ var isMobile = function () {
     })(navigator.userAgent || navigator.vendor || window.opera);
     return check;
 };
+
 function track(detail, event = "click_btn") {
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
@@ -20,15 +34,16 @@ function track(detail, event = "click_btn") {
         detail: detail,
     });
 }
+
 $(".marlup_website").click(function () {
-    track("marlup website");
+    track("marlup_website");
 });
 $("#write_review").click(function () {
-    track("write review");
+    track("review");
 });
-$("#home_btn_events").click(function () {
-    track("home button events");
-});
+// $("#home_btn_events").click(function () {
+//     track("home_btn_events");
+// });
 $("#home_btn_info").click(function () {
     track("open popup home", "whatsapp");
 });
@@ -59,7 +74,9 @@ $("#email").click(function () {
 $("#tel_number").click(function () {
     track("telefono", "lead");
 });
-
+$("#christmas_promo").click(function () {
+    track("christmas_promo");
+});
 const prenota_buttons = Array.from(
     document.querySelectorAll('[class*="btn-prenota-ora"]')
 );

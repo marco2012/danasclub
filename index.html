@@ -414,7 +414,7 @@
             </div>
         </section>
 
-        <section class="section-lg bg-periglacial-blue text-center" style="padding: 60px 0;">
+        <section class="section-lg bg-periglacial-blue text-center" style="padding: 60px 0;" id="christmas_promo">
             <a href="/prova-gratuita.html">
                 <div class="shell">
                     <div class="range" style="justify-content: center;">
@@ -886,6 +886,11 @@
     <script src="js/core.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/analytics.js"></script>
+    <script>
+        if (formatDate() > '2023-01-31') {
+            document.getElementById("christmas_promo").style.display = 'none';
+        }
+    </script>
 </body>
 
 </html>
