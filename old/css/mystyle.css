@@ -163,16 +163,16 @@ a {
 }
 
 /* #navbar_title:after {
-    content: " - Scuola di Ballo Roma";
+    content: " - SSD Roma";
 } */
 @media (min-width: 535px) {
     #navbar_title:after {
-        content: " - Scuola di Ballo";
+        content: " - SSD";
     }
 }
 @media (min-width: 630px) {
     #navbar_title:after {
-        content: " - Scuola di Ballo Roma";
+        content: " - SSD Roma";
     }
 }
 
