@@ -59,6 +59,7 @@
     }
     .home-subtitle {
         font-size: 20px;
+        text-transform: uppercase;
     }
     .only-desktop {
         display: none;
