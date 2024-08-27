@@ -95,3 +95,11 @@ prenota_buttons.forEach((element) => {
     }
   });
 });
+
+
+if (document.getElementById("christmas_promo") && formatDate() > '2023-01-31') {
+  document.getElementById("christmas_promo").style.display = 'none';
+}
+if (document.getElementById("sep_24") && formatDate() > '2024-10-01') {
+  document.getElementById("sep_24").style.display = 'none';
+}
