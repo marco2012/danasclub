@@ -305,7 +305,7 @@
                                             </ul> -->
                                     </li>
                                     <li>
-                                        <a href="prova-gratuita.html">Lezione Dimostrativa</a>
+                                        <a href="prova-gratuita.html">Lezioni dimostrative</a>
                                         <!-- <ul class="rd-navbar-dropdown">
                                                 <li>
                                                     <a href="spettacoli.html"
@@ -394,7 +394,7 @@
                     <div class="range range-sm-center">
                         <div class="cell-sm-9 cell-md-8 cell-lg-7">
                             <h1 class="home-title">
-                                Free Sport Life (Danas Club)
+                                Free Sport Life <br>(Danas Club)
                             </h1>
                             <h3 class="home-subtitle">
                                 Balla e divertiti con noi 
@@ -403,14 +403,23 @@
                             <!-- <h6 style="font-size: 10px;">
                                 SOCIETÀ SPORTIVA DILETTANTISTICA A RESPONSABILITÀ LIMITATA riconosciuta ai fini sportivi dagli enti di promozione sportiva EPS, ACSI e UISP.
                             </h6> -->
-                            <button class="btn btn-style-1 btn-primary" onclick="$('#wa-widget-send-button').click()"
+
+                            <!-- <div>
+                                <button style="margin-top: 10px;" class="btn btn-style-1 btn-primary" onclick="$('#wa-widget-send-button').click()"
                                 id="home_btn_info">
                                 WhatsApp
                             </button>
-                            <a class="btn btn-style-1 btn-primary" href="prova-gratuita.html#eventi"
+                            <a style="margin-top: 10px;" class="btn btn-style-1 btn-primary" href="prova-gratuita.html#eventi"
                                 id="home_btn_events">
-                                Lezione Dimostrativa
+                                Lezioni dimostrative
                             </a>
+                            </div> -->
+
+                            <a style="margin-top: 10px;" class="btn btn-style-1 btn-primary" href="corsi.html"
+                                id="home_btn_events">
+                                CORSI E ORARI
+                            </a>
+                            
                         </div>
                     </div>
                 </div>
@@ -439,6 +448,32 @@
                 </div>
             </div>
         </section>
+
+        <section style="background-color: #F5D491; padding: 30px;" id="sep_24"
+        >
+        <div class="shell">
+            <div class="range">
+                <div class="cell-sm-8 cell-md-7 cell-lg-6">
+                    <h2 style="max-width: 90%">Info</h2>
+                    <p style="font-size: 22px; color: black;">
+                        I corsi di ballo ricominciano dal 16 settembre 2024
+                    </p>
+                    <!-- <a class="btn btn-sm btn-circle btn-primary" href="corsi.html">CORSI e ORARI</a> -->
+                </div>
+                <div class="shell" style="margin: 20px 0;">
+                    <div class="range" style="justify-content: center;">
+                        <div class="cell-sm-8 cell-md-6 cell-lg-6">
+                            <img width="100%" height="100%" src="images/tango_24.webp"></img>
+                        </div>
+                        <div class="cell-sm-8 cell-md-6 cell-lg-6" style="margin-top: 10px;">
+                            <img width="100%" height="100%" src="images/volantino_2025.webp"></img>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
 
         <section class="section-xxl bg-gray-base bg-gray-dark-overlay bg-image"
             style="background-image: url(images/bg-image-10.webp)">
@@ -490,7 +525,7 @@
             <div class="shell">
                 <div class="range range-sm-center range-md-reverse">
                     <div class="cell-sm-10 cell-md-7 cell-lg-6">
-                        <h2 style="max-width: 90%">Lezione Dimostrativa</h2>
+                        <h2 style="max-width: 90%">Lezioni dimostrative</h2>
                         <p class="bigger">
                             Vieni a provare <b>gratuitamente</b> e senza
                             impegno le nostre lezioni dimostrative per
@@ -841,7 +876,7 @@
                                 <a href="corsi.html">Corsi e Orari</a>
                             </li>
                             <li>
-                                <a href="prova-gratuita.html">Lezione Dimostrativa</a>
+                                <a href="prova-gratuita.html">Lezioni dimostrative</a>
                             </li>
                             <li>
                                 <a href="spettacoli.html">Spettacoli</a>
@@ -932,6 +967,9 @@
     <script>
         if (formatDate() > '2023-01-31') {
             document.getElementById("christmas_promo").style.display = 'none';
+        }
+        if (formatDate() > '2024-10-01') {
+            document.getElementById("sep_24").style.display = 'none';
         }
     </script>
 </body>
