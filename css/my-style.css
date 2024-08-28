@@ -85,3 +85,17 @@
         display: none;
     }
 }
+
+  /* Default styles for mobile devices */
+.inline-gallery-container {
+    width: 700px;
+    height: 400px;
+    position: inherit !important; /* Default to inherit on mobile */
+}
+
+/* Styles for desktop devices */
+@media (min-width: 768px) {
+    .inline-gallery-container {
+        position: relative !important; /* Override to relative on desktop */
+    }
+}
