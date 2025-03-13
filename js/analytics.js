@@ -102,3 +102,6 @@ if (document.getElementById("christmas_promo") && formatDate() > "2023-01-31") {
 if (document.getElementById("sep_25") && formatDate() > "2025-01-13") {
     document.getElementById("sep_25").style.display = "none";
 }
+if (document.getElementById("mar_25") && formatDate() > "2025-06-30") {
+    document.getElementById("mar_25").style.display = "none";
+}
