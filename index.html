@@ -467,6 +467,34 @@
                 </div>
         </section>
 
+        <section id="lezioni-dimostrative" class="section-lg text-center" style="padding: 60px 0; background: linear-gradient(135deg, #FFF8DC, #F5DEB3);">
+            <div class="shell">
+                <div class="range range-sm-center">
+                    <div class="cell-xs-12">
+                        <h2 style="margin-bottom: 20px; color: #333;">LEZIONI DIMOSTRATIVE</h2>
+                        <p style="margin-bottom: 30px; font-size: 20px; color: #666;">
+                            <a href="#" onclick="openWhatsAppOrRedirect(event)" style="color: #333; text-decoration: underline; font-weight: 500;">
+                                <span class="icon icon-xs fa-whatsapp" style="margin-right: 8px;"></span>Richiesta prenotazione
+                            </a>
+                        </p>
+                        <div style="margin-bottom: 30px; font-size: 18px; color: #333;">
+                            <table style="margin: 0 auto; border-collapse: collapse; width: 100%; max-width: 500px;">
+                                <tr>
+                                    <td style="padding: 10px 15px; font-weight: bold; text-align: left; border-bottom: 1px solid #ddd;">BALLI DI GRUPPO</td>
+                                    <td style="padding: 10px 15px; text-align: right; border-bottom: 1px solid #ddd;">Martedì 23 settembre ore 18:30</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 10px 15px; font-weight: bold; text-align: left;">STANDARD E LATINO AMERICANO</td>
+                                    <td style="padding: 10px 15px; text-align: right;">Venerdì 26 settembre ore 18:30</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <img src="images/sep_25.png" alt="September 25" style="max-width: 600px; width: 100%; height: auto;" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section class="section-xxl bg-gray-base bg-gray-dark-overlay bg-image"
             style="background-image: url(images/bg-image-10.webp)">
             <div class="shell">
@@ -1000,6 +1028,67 @@
     <script src="js/core.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/analytics.js"></script>
+    <script>
+        // Hide the "LEZIONI DIMOSTRATIVE" section after September 2025
+        function hideLezioniDimostrativeAfterSeptember2025() {
+            const currentDate = new Date();
+            const september2025 = new Date('2025-10-01'); // October 1st, 2025 (after September)
+            
+            if (currentDate >= september2025) {
+                const section = document.getElementById('lezioni-dimostrative');
+                if (section) {
+                    section.style.display = 'none';
+                }
+            }
+        }
+        
+        // Open WhatsApp popup or redirect to contatti
+        function openWhatsAppOrRedirect(event) {
+            event.preventDefault();
+            
+            // Try to trigger the WhatsApp widget
+            try {
+                // Check if WhatsApp widget exists and is available
+                if (typeof CreateWhatsappChatWidget !== 'undefined' || 
+                    (window.wati && window.wati.openChat)) {
+                    // Try to open WhatsApp chat widget
+                    if (window.wati && window.wati.openChat) {
+                        window.wati.openChat();
+                        return;
+                    }
+                    // Alternative: try to click the WhatsApp button if it exists
+                    const whatsappButton = document.querySelector('#wa-widget-send-button, .wa-widget-send-button, [data-wati]');
+                    if (whatsappButton) {
+                        whatsappButton.click();
+                        return;
+                    }
+                }
+                
+                // If WhatsApp widget is not available, try to open WhatsApp directly
+                const phoneNumber = '393476873085';
+                const message = 'Ciao, vorrei prenotare una lezione dimostrativa per settembre 2025.';
+                const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+                
+                // Try to open WhatsApp in a new window/tab
+                const whatsappWindow = window.open(whatsappUrl, '_blank');
+                
+                // If popup was blocked or failed, redirect to contatti page
+                if (!whatsappWindow || whatsappWindow.closed || typeof whatsappWindow.closed === 'undefined') {
+                    setTimeout(() => {
+                        window.location.href = 'contatti.html';
+                    }, 100);
+                }
+                
+            } catch (error) {
+                // If any error occurs, redirect to contatti page
+                console.log('WhatsApp not available, redirecting to contatti page');
+                window.location.href = 'contatti.html';
+            }
+        }
+        
+        // Run the function when the page loads
+        document.addEventListener('DOMContentLoaded', hideLezioniDimostrativeAfterSeptember2025);
+    </script>
 
 </body>
 
