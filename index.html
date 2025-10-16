@@ -449,22 +449,14 @@
             </div>
         </section> -->
 
-        <section style="background-color: #F5D491; padding: 30px;" id="mar_25">
-            <div class="cell-sm-8 cell-md-7 cell-lg-6">
-                <h2 style="max-width: 80%">Info</h2>
-                <p style="font-size: 18px; color: black;">
-                    Corso di <strong>Tango e Milonga</strong> per <strong>principianti assoluti</strong>.
-                    </br>
-                    Tutti i lunedì 20:30 - 22:30 da aprile a giugno.
-                </p>
-            </div>
-            <div class="shell" style="margin: 20px 0;">
-                    <div class="range">
-                        <div class="cell-sm-8 cell-md-6 cell-lg-6">
-                            <img width="100%" height="100%" src="images/tango_mar_25.webp"></img>
-                        </div>
+        <section id="volantino-section" style="background-color: #F5D491; padding: 30px;">
+            <div class="shell">
+                <div class="range range-sm-center range-50">
+                    <div class="cell-xs-12 text-center">
+                        <img id="volantino-image" src="images/volantino26.webp" style="max-width: 600px; width: 100%; height: auto; display: block; margin: 0 auto;"></img>
                     </div>
                 </div>
+            </div>
         </section>
 
         <section id="lezioni-dimostrative" class="section-lg text-center" style="padding: 60px 0; background: linear-gradient(135deg, #FFF8DC, #F5DEB3);">
@@ -1053,6 +1045,19 @@
             }
         }
         
+        // Hide the volantino image after December 2025
+        function hideVolantinoAfterDecember2025() {
+            const currentDate = new Date();
+            const january2026 = new Date('2026-01-01'); // January 1st, 2026 (after December 2025)
+            
+            if (currentDate >= january2026) {
+                const section = document.getElementById('volantino-section');
+                if (section) {
+                    section.style.display = 'none';
+                }
+            }
+        }
+        
         // Open WhatsApp popup or redirect to contatti
         function openWhatsAppOrRedirect(event) {
             event.preventDefault();
@@ -1097,8 +1102,11 @@
             }
         }
         
-        // Run the function when the page loads
-        document.addEventListener('DOMContentLoaded', hideLezioniDimostrativeAfterSeptember2025);
+        // Run the functions when the page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            hideLezioniDimostrativeAfterSeptember2025();
+            hideVolantinoAfterDecember2025();
+        });
     </script>
 
 </body>
