@@ -1,6 +1,0 @@
-User-agent: *
-Disallow: /template/
-Disallow: /old/
-Disallow: /bat/
-
-Sitemap: https://danasclub.it/sitemap.xml
