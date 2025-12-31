@@ -29,10 +29,12 @@ const Promo: React.FC = () => {
                 Inizia a ballare oggi. <br />
                 <span className="text-tango-red">La prima lezione è gratis.</span>
               </h2>
-              <p className="text-white text-lg mb-8 max-w-xl mx-auto lg:mx-0">
-                Corso di Tango e Milonga per principianti.<br/>
-                Lezione di prova <strong>12 gennaio 2026</strong> ore <strong>20:30</strong>.
-              </p>
+              {new Date() <= new Date('2026-01-31') && (
+                <p className="text-white text-lg mb-8 max-w-xl mx-auto lg:mx-0">
+                  Corso di Tango e Milonga per principianti.<br/>
+                  Lezione di prova <strong>12 gennaio 2026</strong> ore <strong>20:30</strong>.
+                </p>
+              )}
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <button 
