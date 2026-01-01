@@ -45,7 +45,7 @@ const Promo: React.FC = () => {
                 </button>
                 <div className="flex items-center gap-2 text-white/80 px-6 py-4">
                   <Calendar className="w-5 h-5" />
-                  <span className="text-sm">Offerta valida fino al {new Date(new Date().getFullYear(), new Date().getMonth() + 2, 0).toLocaleDateString('it-IT', { day: 'numeric', month: 'long' })}</span>
+                  <span className="text-sm">Offerta valida fino al {new Date(new Date().getFullYear(), new Date().getMonth() + 1, 0).toLocaleDateString('it-IT', { day: 'numeric', month: 'long' })}</span>
                 </div>
               </div>
             </div>
