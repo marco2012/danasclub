@@ -12,7 +12,7 @@ const Header: React.FC = () => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
     };
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
@@ -42,6 +42,7 @@ const Header: React.FC = () => {
     { label: 'Orari', href: '#schedule' },
     { label: 'Recensioni', href: '#reviews' },
     { label: 'Galleria', href: '#gallery' },
+    { label: 'FAQ', href: '#faq' },
     { label: 'Contatti', href: '#contact' },
   ];
 
@@ -88,9 +89,9 @@ const Header: React.FC = () => {
             className="w-10 h-10 object-contain group-hover:scale-105 transition-transform duration-300"
           />
           <div className={`transition-colors duration-300 ${scrolled || isOpen ? 'text-tango-dark' : 'text-white'}`}>
-            <h1 className="text-xl font-bold tracking-tight">
+            <p className="text-xl font-bold tracking-tight">
               Free Sport Life
-            </h1>
+            </p>
           </div>
         </a>
 

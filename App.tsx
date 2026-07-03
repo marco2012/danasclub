@@ -10,6 +10,7 @@ import Promo from './components/Promo';
 const Schedule = lazy(() => import('./components/Schedule'));
 const Gallery = lazy(() => import('./components/Gallery'));
 const Reviews = lazy(() => import('./components/Reviews'));
+const FAQ = lazy(() => import('./components/FAQ'));
 const Contact = lazy(() => import('./components/Contact'));
 const Chatbot = lazy(() => import('./components/Chatbot'));
 
@@ -33,6 +34,9 @@ function App() {
         </Suspense>
         <Suspense fallback={<LoadingFallback />}>
           <Reviews />
+        </Suspense>
+        <Suspense fallback={<LoadingFallback />}>
+          <FAQ />
         </Suspense>
         <Suspense fallback={<LoadingFallback />}>
           <Contact />

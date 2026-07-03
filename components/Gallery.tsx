@@ -57,7 +57,7 @@ const Gallery: React.FC = () => {
         <LightGallery
           speed={500}
           plugins={[lgThumbnail, lgZoom]}
-          elementClassNames="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4"
+          elementClassNames="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-4 -mx-6 px-6 md:-mx-0 md:px-0 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
           mobileSettings={{
             controls: true,
             showCloseIcon: true,
@@ -70,12 +70,12 @@ const Gallery: React.FC = () => {
             <a
               key={index}
               href={src}
-              className={`relative overflow-hidden rounded-2xl group cursor-pointer aspect-square ${index >= 5 ? 'hidden md:block' : 'block'}`}
+              className="relative overflow-hidden rounded-2xl group cursor-pointer aspect-square flex-none w-[70vw] sm:w-64 md:w-56 lg:w-64 snap-start block"
             >
               <div className="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors duration-500 z-10"></div>
               <img 
                 src={src} 
-                alt={`Momento Dana's Club ${index + 1}`} 
+                alt={`Allievi durante una lezione o spettacolo di ballo da Free Sport Life a Roma (foto ${index + 1})`}
                 className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110"
                 loading="lazy"
                 decoding="async"

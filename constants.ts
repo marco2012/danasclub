@@ -8,14 +8,7 @@ import coreograficoImg from './assets/images/balli/coreografico.webp';
 import donatellaImg from './assets/images/donatella2.webp';
 import antonioImg from './assets/images/antonio.webp';
 
-import ballo1 from './assets/images/gallery/ballo1.webp';
-import ballo2 from './assets/images/gallery/ballo2.webp';
-import ballo3 from './assets/images/gallery/ballo3.webp';
-import ballo4 from './assets/images/gallery/ballo4.webp';
-import ballo5 from './assets/images/gallery/ballo5.webp';
-import ballo6 from './assets/images/gallery/ballo6.webp';
-import ballo7 from './assets/images/gallery/ballo7.webp';
-import ballo8 from './assets/images/gallery/ballo8.webp';
+const galleryModules = import.meta.glob('./assets/images/gallery/*.webp', { eager: true, import: 'default' }) as Record<string, string>;
 
 export const COURSES: Course[] = [
   {
@@ -131,13 +124,6 @@ export const SCHOOL_INFO = {
   mapsUrl: "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d5937.737541485168!2d12.5152869!3d41.9169603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f61649989d97d%3A0x6b60f25e791307b!2sVia%20Giovanni%20Battista%20de%20Rossi%2C%2048%2C%2000161%20Roma%20RM!5e0!3m2!1sit!2sit!4v1710000000000!5m2!1sit!2sit"
 };
 
-export const GALLERY_IMAGES = [
-  ballo1,
-  ballo2,
-  ballo3,
-  ballo4,
-  ballo5,
-  ballo6,
-  ballo7,
-  ballo8,
-];
+export const GALLERY_IMAGES = Object.keys(galleryModules)
+  .sort()
+  .map((key) => galleryModules[key]);
