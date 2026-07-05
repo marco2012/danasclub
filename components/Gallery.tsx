@@ -106,6 +106,12 @@ const Gallery: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
+                title: "Chi dice Donna... dice Ballo 6",
+                date: "12/04/2026",
+                video: "https://vimeo.com/1193227122",
+                foto: null
+              },
+              {
                 title: "Chi dice Donna... dice Ballo 4",
                 date: "26/05/2024",
                 video: "https://www.youtube.com/watch?v=HMqQpBJMSWM",
